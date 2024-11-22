@@ -1,0 +1,8 @@
+# Extra config to override default milvus.yaml
+queryNode.enableDisk: true
+queryNode:
+  loadMemoryUsageFactor: 1 # The multiply factor of calculating the memory usage while loading segments
+  enableDisk: true # enable querynode load disk index, and search on disk index
+  maxDiskUsagePercentage: 95
+  cache:
+    memoryLimit: 32212254720 # 30 GB
